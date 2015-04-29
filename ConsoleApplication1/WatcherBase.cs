@@ -41,19 +41,14 @@
                     Filter = f
                 };
                 SystemWatchers.Add(systemWatcher);
-
-                ProcessedFiles = new Dictionary<string, DateTime>();
-                ToBeProcessed = new List<string>();
-                HookUpEvents();
-                InitTimer();
             }
 
 
 
-            //ProcessedFiles = new Dictionary<string, DateTime>();
-            //ToBeProcessed = new List<string>();
-            //HookUpEvents();
-            //InitTimer();
+            ProcessedFiles = new Dictionary<string, DateTime>();
+            ToBeProcessed = new List<string>();
+            HookUpEvents();
+            InitTimer();
         }
 
         public void OnChanged(object source, FileSystemEventArgs e)

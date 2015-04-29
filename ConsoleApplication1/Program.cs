@@ -8,8 +8,8 @@
         {
             var sysWatcher =
                 new Watcher(
-                    @"C:\Users\Jamie.Rees\Documents\Visual Studio 2012\Projects\HostedSignatures.Automation\HostedSignatures.Tests\bin\Debug\",
-                    @"Y:\Builds\Hosted Signatures\MTM\HostedSignaturesSmokeTest\");
+                    @"C:\WatchLocation\",
+                    @"C:\DeployLocation\");
             Console.WriteLine("The Watcher has started");
             
             var filters = new string[]
